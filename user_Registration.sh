@@ -1,9 +1,9 @@
 #!/bin/bash
-read -p "enter Mobile-Number:" Mobile_number
-MobileNumber_Pattern="^[0-9]{2}[[:space:]][0-9]{10}$"
-if [[ $Mobile_number =~ $MobileNumber_Pattern ]]
+read -p "enter password:" Password
+Password_Pattern="^[a-zA-Z]{8,}$"
+if [[ $Password =~ $Password_Pattern ]]
 then
-        echo "valid"
+	echo "valid"
 else
-        echo "invalid"
+	echo "invalid"
 fi
